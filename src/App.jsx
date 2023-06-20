@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://dummyjson.com/comments");
+      const response = await fetch("https://dummyjson.com/comments?limit=5");
 
       if (!response.ok) {
         throw new Error("Something were wrong! 💥");
